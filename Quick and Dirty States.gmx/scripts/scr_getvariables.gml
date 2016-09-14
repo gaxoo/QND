@@ -8,6 +8,7 @@ jumpspeed = 7;
 movespeed = 4;
 shake = 0;
 move = 0;
+cooldown = 0;
 
 key_duck = 0;
 key_power = 0;

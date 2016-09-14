@@ -19,11 +19,12 @@ var hsp_final = hsp + hsp_carry;
 hsp_carry = 0;
 
 
-if (key_power) && (place_meeting(x,y,obj_sword))
+if (key_power) && (place_meeting(x,y,obj_sword) && cooldown == 0)
 {
     hsp = 0;
     vsp = 0;
-    instance_change(obj_player_ninja,true);
+    cooldown = 30;
+    state = states.ninja;
 }
 if (key_power) && (place_meeting(x,y,obj_balloon))
 {

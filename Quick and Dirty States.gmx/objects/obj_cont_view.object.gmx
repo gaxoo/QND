@@ -49,11 +49,14 @@ shake = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x += ((obj_tracker.x-x)/5) + random_range(-shake,shake);
-y += ((obj_tracker.y-y)/5) + random_range(-shake,shake);
+            <string>xshake = random_range(-shake, shake);
+yshake = random_range(-shake, shake);
 
 background_x[0] = view_xview[0]/2;
 background_y[0] = view_yview[0]/2;
+
+x += ((obj_tracker.x-x)/5) + xshake;
+y += ((obj_tracker.y-y)/5) + yshake;
 
 shake *= 0.9;
 </string>
