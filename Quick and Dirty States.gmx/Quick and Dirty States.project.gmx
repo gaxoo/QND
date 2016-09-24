@@ -97,6 +97,8 @@
     <script>scripts\scr_screenshake.gml</script>
     <script>scripts\scr_player_jumping.gml</script>
     <script>scripts\scr_animate.gml</script>
+    <script>scripts\scr_ninja_jump.gml</script>
+    <script>scripts\scr_ninja_animate.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Player">

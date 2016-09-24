@@ -85,12 +85,15 @@ key_attack = keyboard_check_pressed(vk_space);
 key_power = keyboard_check_pressed(vk_shift);*/
 if (obj_cont_view.shake &lt; 1) 
     obj_cont_view.shake = 0;
+
+if (cooldown &gt; 0) cooldown -= 1;
     
 switch (state)
 {
     case states.normal: scr_player_normal(); break;
     case states.jumping: scr_player_jumping(); break;
     case states.ninja: scr_player_ninja(); break;
+    case states.ninja_jump: scr_ninja_jump(); break;
 }
 
 </string>
